@@ -1,0 +1,1021 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inline-block-container {
+    display: inline-block;
+  }
+  
+  .inline-svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .inline-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .parentDiv{
+    position: relative;
+  }
+
+  .copyButton{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  /*------- Colores BEPC ---------*/
+  .bepc-color-primary{
+    background-color: #234367;
+  }
+  .bepc-color-primary-hover{
+    background-color: #152233;
+  }
+  .bepc-color-secondary{
+    background-color: #FFC82E;
+  }
+  .bepc-icon-color{
+    background-color: #809FB8;
+  }
+  .bepc-icon-color-hover{
+    background-color: #D9E1E7;
+  }
+  .bepc-positive-color{
+    background-color: #00854D;
+  }
+  .bepc-negative-color{
+    background-color: #D83A52;
+  }
+  .bepc-warning-color{
+    background-color: #FFCB00;
+  }
+
+ /*------- Tipografias BEPC ---------*/
+ @font-face {
+  font-family: 'Poppins-ExtraBold'; 
+  src: url('./fonts/Poppins-ExtraBold.ttf');
+}
+  @font-face {
+    font-family: 'Poppins-Bold'; 
+    src: url('./fonts/Poppins-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-SemiBold'; 
+    src: url('./fonts/Poppins-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Medium'; 
+    src: url('./fonts/Poppins-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Regular'; 
+    src: url('./fonts/Poppins-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Light'; 
+    src: url('./fonts/Poppins-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Thin'; 
+    src: url('./fonts/Poppins-Thin.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Bold'; 
+    src: url('./fonts/Figtree-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Medium'; 
+    src: url('./fonts/Figtree-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Regular'; 
+    src: url('./fonts/Figtree-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Light'; 
+    src: url('./fonts/Figtree-Light.ttf');
+  }
+
+  /*------ Declaracion de tipografias BEPC ------*/
+   .bepc-h1{
+    font-family: Poppins-Bold!important;
+    font-size: 30px!important;
+  }
+  .bepc-h2{
+    font-family: Poppins-Bold!important;
+    font-size: 24px!important;
+  }
+  .bepc-h3{
+    font-family: Poppins-Regular!important;
+    font-size: 24px!important;
+  }
+  .bepc-h4{
+    font-family: Poppins-Bold!important;
+    font-size: 18px!important;
+  }
+  .bepc-h5{
+    font-family: Poppins-Bold!important;
+    font-size: 16px!important;
+  }
+  .figtree-text{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+  }
+  .figtree-p{
+    font-family: Figtree-Regular!important;
+    font-size: 16px!important;
+  }
+  .figtree-subtext{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+  }
+  .figtree-link{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+    color: blue;
+  }
+
+  /*------ Copy to clipboard ------*/
+  .copy-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*------ Fixear el sidebar ------*/
+  .sidebar-scrollarea{
+    position: fixed!important;
+    top: 40px!important;
+    left: 0!important;
+    width: 250px!important;
+  }
+  /*------ Main content ------*/
+  .main-content{
+    margin-left: 250px!important;
+    margin-top: 40px;
+  }
+
+  /*------ Top menu ------*/
+  .top-menu{
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    height: 40px!important;
+    width: 100%!important;
+    z-index: 49;
+  }
+
+  /*------ Botones ------*/
+  .bepc-light-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #323338;
+    color: #323338!important;
+  }
+  .bepc-dark-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #676879;
+    color: #676879!important;
+  }
+
+  .bepc-disable-button{
+    background-color: #809FB8!important;
+    color: #FFFFFF!important;
+  }
+
+  .bepc-placeholder-button{
+    background-color: #000000!important;
+    color: #D9E1E7!important;
+  }
+
+  .bepc-link-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #1F76C2;
+    color: #1F76C2!important;
+  }
+
+  /*------ Card BEPC Dark ------*/
+  .dark-card{
+    background-color: #323338;
+  }
+
+  /*------ Tabla BEPC ------*/
+  .table-name{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #FFC82E;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .table th {
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+  }
+  
+  .table td {
+    font-family: Figtree-Regular!important;
+    font-size: 14px;
+    
+  }
+  
+  .table .assignee {
+    text-align: center;
+  }
+  .th-primary, .td-primary{
+    width: 300px!important;
+    padding: 10px;
+    color: #323338;
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+  }
+
+  .th-secondary{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFC82E!important;
+  }
+  .td-secondary{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFE59D!important;
+  }
+  .th-checkbox{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+  .td-checkbox{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }  
+
+   /*------ Tabla BEPC Dark ------*/
+   .table-name-dark{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #FFC82E;
+  }
+   .table-dark{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+   }
+   .table-dark th {
+    color: #FFFFFF!important;
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .table-dark td{
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .th-primary-dark, .td-primary-dark{
+    width: 300px!important;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+  }
+  .th-secondary-dark{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFC82E!important;
+  }
+  .td-secondary-dark{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFE59D!important;
+  }
+  .th-checkbox-dark{
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+    width: 30px!important;
+  }
+  .td-checkbox-dark{
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+    width: 30px!important;
+  }
+
+  /*------ Tabla BEPC variant 1 ------*/
+  .table-name-v1{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #234367;
+  }
+  .table-v1 {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .table-v1 th, .table-v1 td {
+    text-align: center;
+  }
+  
+  .table-v1 th {
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+  }
+  
+  .table td {
+    font-family: Figtree-Regular!important;
+    font-size: 14px;
+  }
+  
+  .table-v1 .assignee {
+    text-align: center;
+  }
+  .th-primary-v1, .td-primary-v1{
+    width: 300px!important;
+    padding: 10px;
+    color: #323338;
+    font-family: Figtree-Regular;
+    font-size: 14px;
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+  }
+
+  .th-secondary-v1{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #234367!important;
+  }
+  .td-secondary-v1{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #3c628f!important;
+  }
+  .th-checkbox-v1{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+  .td-checkbox-v1{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+
+    /*------ Tabla BEPC variant 2 ------*/
+    .table-name-v2{
+      font-family: Poppins-Bold;
+      font-size: 18px;
+      color: #00854D;
+    }
+    .table-v2 {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .table-v2 th, .table-v2 td {
+      text-align: center;
+    }
+    
+    .table-v2 th {
+      font-size: 14px;
+      font-family: Figtree-Regular;
+      font-weight: lighter;
+    }
+    
+    .table-v2 td {
+      font-family: Figtree-Regular!important;
+      font-size: 14px;
+    }
+    
+    .table-v2 .assignee {
+      text-align: center;
+    }
+    .th-primary-v2, .td-primary-v2{
+      width: 300px!important;
+      padding: 10px;
+      color: #323338;
+      font-family: Figtree-Regular;
+      font-size: 14px;
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+    }
+  
+    .th-secondary-v2{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #00854D!important;
+    }
+    .td-secondary-v2{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #13b672!important;
+    }
+    .th-checkbox-v2{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+    .td-checkbox-v2{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    } 
+
+    /*------ Tabla BEPC variant 3 ------*/
+    .table-name-v3{
+      font-family: Poppins-Bold;
+      font-size: 18px;
+      color: #D83A52;
+    }
+    .table-v3 {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+        
+    .table-v3 th, .table-v3 td {
+      text-align: center;
+    }
+        
+    .table-v3 th {
+      font-size: 14px;
+      font-family: Figtree-Regular;
+      font-weight: lighter;
+    }
+        
+    .table-v3 td {
+      font-family: Figtree-Regular!important;
+      font-size: 14px;
+    }
+        
+    .table-v3 .assignee {
+      text-align: center;
+    }
+    .th-primary-v3, .td-primary-v3{
+      width: 300px!important;
+      padding: 10px;
+      color: #323338;
+      font-family: Figtree-Regular;
+      font-size: 14px;
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+    }
+      
+    .th-secondary-v3{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #D83A52!important;
+    }
+    .td-secondary-v3{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #f75d74!important;
+    }
+    .th-checkbox-v3{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+    .td-checkbox-v3{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+
+    /*------ BEPC Tabs ------*/
+  
+    .btn-prim-navbar {
+      margin-left: auto
+    }
+  
+    .tab-menu-selected{
+    margin-top: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: #234367;
+    }
+  
+    .tab-menu-option{
+    width: 100%;
+    }
+
+    .navbar-list{
+      display: inline-block;
+      margin: 5px; /* Espacio entre botones */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navbar-item {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px 0; /* Ajusta los márgenes superior e inferior */
+    }
+      /*---------- Definicion de botones para tabs -----------*/
+
+  .btn-tab, .btn-tab-question{
+    border: none;
+    font-family: Figtree-Regular;
+    background-color: transparent;
+    color: #676879;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .btn-tab-more{
+    border: none;
+    font-family: Figtree-Regular;
+    background-color: transparent;
+    color: #676879;
+  }
+
+  .btn-tab:hover, .btn-tab-more:hover, .btn-tab-question:hover{
+    background-color: #d9e1e7;
+    border-radius: 4px;
+  }
+
+  /*---------- Definicion de divisiones para tabs -----------*/
+  .division-line {
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: #CACACA;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .hr-menu{
+    padding: 0!important;
+    margin: 0;
+    margin-top: 0.4em;
+    margin-bottom: 1em;
+  }
+
+  /*------ BEPC Tab Dark ------*/
+  .btn-prim-navbar {
+    margin-left: auto
+  }
+
+  .tab-menu-selected-dark{
+  margin-top: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: #3e74b3;
+  }
+
+  .tab-menu-option-dark{
+  width: 100%;
+  }
+
+  .navbar-list-dark{
+    display: inline-block;
+    margin: 5px; /* Espacio entre botones */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .navbar-item-dark {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0; /* Ajusta los márgenes superior e inferior */
+  }
+    /*---------- Definicion de botones para tabs -----------*/
+
+.btn-tab-dark, .btn-tab-question-dark{
+  border: none;
+  font-family: Figtree-Regular;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btn-tab-more-dark{
+  border: none;
+  font-family: Figtree-Regular;
+  background-color: transparent;
+  color: #676879;
+}
+
+.btn-tab-dark:hover, .btn-tab-more-dark:hover, .btn-tab-question-dark:hover{
+  background-color: #85898b;
+  border-radius: 4px;
+}
+
+/*------ BEPC button primary ------ */
+.primary-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: #234367;
+  color: #FFFFFF;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.primary-button-bepc:hover{
+  background-color: #152233;
+}
+
+/*------ BEPC button secondary ------ */
+.secondary-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: #FFC82E;
+  color: #FFFFFF;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.secondary-button-bepc:hover{
+  background-color: #152233;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button positive ------ */
+.positive-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: #00854D;
+  color: #FFFFFF;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.positive-button-bepc:hover{
+  background-color: #152233;
+}
+
+/*------ BEPC button negative ------ */
+.negative-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: #D83A52;
+  color: #FFFFFF;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.negative-button-bepc:hover{
+  background-color: #152233;
+}
+
+/*------ BEPC button warning ------ */
+.warning-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: #FFCB00;
+  color: #FFFFFF;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.warning-button-bepc:hover{
+  background-color: #152233;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button link ------ */
+.link-button-bepc{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #1F76C2;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.link-button-bepc:hover{
+  color: #152233;
+
+
+}
+/*====== Buttons outline ======*/
+
+/*------ BEPC button primary outline ------ */
+.primary-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #234367;
+  border: 1px solid #234367;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.primary-button-bepc-outline:hover{
+  background-color: #234367;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button secondary outline ------ */
+.secondary-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFC82E;
+  border: 1px solid #FFC82E;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.secondary-button-bepc-outline:hover{
+  background-color: #FFC82E;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button positive outline ------ */
+.positive-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #00854D;
+  border: 1px solid #00854D;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.positive-button-bepc-outline:hover{
+  background-color: #00854D;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button negative outline ------ */
+.negative-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #D83A52;
+  border: 1px solid #D83A52;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.negative-button-bepc-outline:hover{
+  background-color: #D83A52;
+  color: #FFFFFF;
+}
+
+/*------ BEPC button warning outline ------ */
+.warning-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFCB00;
+  border: 1px solid #FFCB00;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.warning-button-bepc-outline:hover{
+  background-color: #FFCB00;
+  color: #000000;
+}
+
+/*------ BEPC button link outline ------ */
+.link-button-bepc-outline{
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #1F76C2;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  transition: all 0.1s ease-in;
+}
+.link-button-bepc-outline:hover{
+  color: #152233;
+}
+
+/*====== Icon button ======*/
+.icon-button-bepc{
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px;
+  transition: all 0.1s ease-in;
+}
+.svg-button{
+  color: #33404b;
+}
+.icon-button-bepc:hover{
+  background-color: #D9E1E7;
+}
+
+/*====== Input text ======*/
+.bepc-input-text{
+  width: 600px;
+  height: 40px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #313131;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.1s ease-in;
+}
+.bepc-input-text:hover{
+  border: 1px solid #809FB8;
+}
+.bepc-input-text:focus {
+  border-color: #1F76C2;
+  outline: none;
+}
+
+/*------ Input wrapper ------*/
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/*------ Input text success ------*/
+.bepc-input-text-success {
+  width: 600px;
+  height: 40px;
+  border: 1px solid #00854D;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #313131;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.1s ease-in;
+}
+
+.bepc-input-text-success:focus{
+  border: 1px solid #00854D;
+  outline: none;
+}
+
+.svg-success{
+  color: #00854D;
+}
+
+/*------ Input text error ------*/
+.bepc-input-text-error{
+  width: 600px;
+  height: 40px;
+  border: 1px solid #D83A52;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #313131;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.1s ease-in;
+}
+.svg-error{
+  color: #D83A52;
+}
+.bepc-input-text-error:focus{
+  border: 1px solid #D83A52;
+  outline: none;
+}
+
+/*------ Modal ------*/
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 22, 44, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+  z-index: 9999;
+}
+
+.modal.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  border-radius: 12px;
+}
+
+.modal-img{
+  border-radius: 4px;
+  height: 80%;
+  width: auto;
+}
+
+/*------ To use left oriented modal ------*/
+
+.modal-header-left, .modal-p-left{
+  float: left;
+}
+
+.modal-p-left{
+  text-align: left;
+}
+
+.modal-button-right-primary{
+  float: right;
+}
+
+/* Estilo para el botón de cerrar */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/*------ Dropdown menu ------*/
+.bepc-dropdown{
+  width: 300px;
+  height: 40px;
+  padding: 8px;
+  font-family: Figtree-Regular;
+  font-size: 14px;
+  color: #676879;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+}
+.bepc-dropdown:hover{
+  border: 1px solid #809FB8;
+}
+.bepc-dropdown:focus {
+  border-color: #1F76C2;
+  outline: none;
+}
+.bepc-dropdown-option{
+  padding: 5px!important;
+}
+
+
+/*----- Se agrego esta clase al componente original de shadcn Dialog para ajustar el tamano del Dialog ------*/
+  .max-vw {
+    max-width: 80vw; /* Cambia este valor según tus necesidades */
+  }
+  
+  /*------ Se agrego esta clase para ajustar el tamano de los dialog ------*/
+.dialog-content {
+  max-height: 70vh; /* Establece una altura máxima para el contenido */
+  max-width: 75vw;
+  overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+}
